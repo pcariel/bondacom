@@ -1,0 +1,35 @@
+{
+  "name": "bondacom",
+  "version": "1.0.0",
+  "description": "api bondacom",
+  "author": "Pablo Cariel",
+  "license": "ISC",
+  "main": "index.js",
+  "engines": {
+    "node": "=>8.9.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=dev DEBUG=* node bin/server.js",
+    "serve:prod": "node bin/server.js",
+    "test": "mocha --timeout 15000"
+  },
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.16.2",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "mongoose": "^4.13.0",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
+    "debug": "^3.1.0",
+    "cron": "^1.3.0",
+    "moment": "^2.19.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.10.0",
+    "mocha": "^4.0.1",
+    "chai-http": "^3.0.0"
+  }
+  
+}
