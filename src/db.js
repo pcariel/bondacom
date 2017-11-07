@@ -3,8 +3,9 @@ const mongoose = require('mongoose');
 const debug = require("debug");
 
 const log = debug("Bondacom:db");
+const pathConnect = process.env.MONGODB_CONNECT || "mongodb://localhost/bondacom";
 
-mongoose.connect('mongodb://localhost/bondacom', { useMongoClient: true });
+mongoose.connect(pathConnect, { useMongoClient: true });
 mongoose.Promise = global.Promise;
 
 const db = mongoose.connection;

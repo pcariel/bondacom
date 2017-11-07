@@ -12,6 +12,9 @@
 ```shell
 sudo pacman -S mongodb
 sudo pacman -S nodejs npm
+export MONGODB_CONNECT="mongodb://localhost/bondacom"
+export APIXU_KEY="KEYY"
+
 mongo
 use bondacom
 
