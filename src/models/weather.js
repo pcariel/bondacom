@@ -31,7 +31,7 @@ class WeatherClass {
       {
         $match: {
           lastUpdate: {
-            $gte: moment().subtract(1, "d").toDate(),
+            $gte: moment().subtract(24, "h").toDate(),
             $lt: moment().toDate()
           }
         }
